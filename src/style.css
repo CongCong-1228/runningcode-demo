@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#wrapper {
+    position:fixed;
+    top:150px;
+    left:50%;
+    transform:translateX(-50%);
+    
+}
+#div1 {
+     height:200px;
+    width:200px;
+    position:relative;
+}
+#div1::before{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    content: '';
+    display: block;
+}
+#div1::after{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    content: '';
+    display: block;
+}
+
+@media (max-width:500px) {
+   
+    #wrapper{
+        top: 0;
+        right: 0;
+        position: relative;
+        
+    }
+    #span{
+        word-break: break-all;
+        height: 50vh;
+        overflow: auto;
+    }
+}
